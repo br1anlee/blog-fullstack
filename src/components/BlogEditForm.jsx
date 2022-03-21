@@ -9,10 +9,10 @@ export default function BlogEditForm ({blog, setShowForm, showForm}) {
     const handleSubmit = (e) => {
         e.preventDefault()
 
-        axios.put(`${process.env.REACT_APP_SERVER_URL}/blogs/${blog._id}`, blogForm)
+        axios.put(`${process.env.REACT_APP_SERVER_URL}/blog/${blog._id}`, blogForm)
             .then(response => {
-                console.log(response.data)
-                setBlogForm(!showForm)
+                // console.log(response.data)
+                setShowForm(!showForm)
             })
             .catch(console.log)
     }

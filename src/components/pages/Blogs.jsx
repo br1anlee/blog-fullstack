@@ -39,7 +39,7 @@ export default function Blogs ({blogs, setBlogs}) {
         <>
             <div>
                 <Form 
-                    newBlog={newBlog}
+                    blogForm={newBlog}
                     setNewBlog={setNewBlog}
                     handleSubmit={handleSubmit}
                 />

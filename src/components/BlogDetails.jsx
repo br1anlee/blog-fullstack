@@ -1,4 +1,4 @@
-export default function BlogDetails ({blog, commentList}) {
+export default function BlogDetails ({blog}) {
     const date = (new Date(blog.createdAt)).toDateString()
     return (
         <>
@@ -9,7 +9,7 @@ export default function BlogDetails ({blog, commentList}) {
 
             <div>
                 <h4>Comments</h4>
-                {commentList}
+                
             </div>
         </>
     )
