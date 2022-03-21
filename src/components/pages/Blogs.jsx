@@ -24,6 +24,8 @@ export default function Blogs ({blogs, setBlogs}) {
             console.log(err)
         }
     }
+
+
     // Mapping through each blog in blogs
     const blogLinks = blogs.map((blog, i) => {
         return (
